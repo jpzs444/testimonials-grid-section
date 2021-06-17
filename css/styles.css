@@ -25,12 +25,56 @@ body {
     font-weight: 500;
     font-size: 0.8125rem;
     line-height: 1.5;
+    color: var(--white);
+    background-color: var(--light-grayish-blue);
+}
+
+.testimonial-grid {
+    min-height: 100vh;
+}
+
+.grid-container {
+    margin: 4.4375rem 1.5rem;
+    display: grid;
+    /* grid-template-rows: repeat(5, 1fr); */
+    grid-gap: 1.5rem;
+}
+
+.grid-container > * {
+    padding: 1.5rem 1.875rem;
+    border-radius: 0.5rem;
+}
+
+.daniel {
+    background-color: var(--moderate-violet);
+}
+
+.jonathan {
+    background-color: var(--very-dark-grayish-blue);
+}
+
+.jeanette,
+.kira {
+    background-color: var(--white);
+    color: var(--very-dark-grayish-blue);
+}
+
+.patrick {
+    background-color: var(--very-dark-blackish-blue);
+}
+
+.main-message {
+    font-weight: 600;
 }
 
 .attribution { 
     font-size: 11px; 
     text-align: center;
+    line-height: 1.2;
+    padding: unset;
+    color: var(--very-dark-blackish-blue);
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+    text-decoration: none;
 }
