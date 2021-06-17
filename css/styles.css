@@ -121,3 +121,42 @@ body {
     color: hsl(228, 45%, 44%); 
     text-decoration: none;
 }
+
+/* the following media query is not yet finalized, the attribution div must not be a child of grid container */
+
+@media only screen and (min-width: 90em) {
+    .testimonial-grid {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .grid-container {
+        max-width: 69.375rem;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "daniel   daniel  jonathan kira"
+            "jeanette patrick patrick  kira";
+    }
+
+    .daniel {
+        grid-area: daniel;
+    }
+
+    .jonathan {
+        grid-area: jonathan;
+    }
+
+    .jeanette {
+        grid-area: jeanette;
+    }
+
+    .patrick {
+        grid-area: patrick;
+    }
+
+    .kira {
+        grid-area: kira;
+    }
+}
