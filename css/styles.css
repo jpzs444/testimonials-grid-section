@@ -23,8 +23,8 @@ html {
 body {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 500;
-    font-size: 0.8125rem;
-    line-height: 1.5;
+    font-size: 0.829rem;
+    line-height: 1.3;
     color: var(--white);
     background-color: var(--light-grayish-blue);
 }
@@ -41,8 +41,11 @@ body {
 }
 
 .grid-container > * {
+    display: flex;
+    flex-direction: column;
     padding: 1.5rem 1.875rem;
     border-radius: 0.5rem;
+    box-shadow: 18px 18px 50px -20px rgba(0, 0, 0, 30%);
 }
 
 .daniel {
@@ -63,16 +66,53 @@ body {
     background-color: var(--very-dark-blackish-blue);
 }
 
+.user-profile {
+    display: flex;
+    padding-bottom: 1rem;
+}
+
+.user-image {
+    margin-right: 0.875rem;
+}
+
+.user-image img {
+    height: 1.875rem;
+    width: 1.875rem;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 30%);
+}
+
+.patrick img {
+    border: 1px solid var(--moderate-violet);
+}
+
+.user-information .verified-graduate {
+    font-size: 0.6875rem;
+    opacity: 50%;
+}
+
 .main-message {
     font-weight: 600;
+    font-size: 1.2725rem;
+    padding-bottom: 1.375rem;
+}
+
+.quoted-message {
+    opacity: 70%;
+}
+
+.daniel .quoted-message {
+    font-size: 0.8725rem;
 }
 
 .attribution { 
+    display: unset;
     font-size: 11px; 
     text-align: center;
     line-height: 1.2;
     padding: unset;
     color: var(--very-dark-blackish-blue);
+    box-shadow: unset;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
