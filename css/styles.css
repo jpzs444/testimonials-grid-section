@@ -31,6 +31,9 @@ body {
 
 .testimonial-grid {
     min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
 }
 
 .grid-container {
@@ -116,23 +119,18 @@ body {
     padding: unset;
     color: var(--very-dark-blackish-blue);
     box-shadow: unset;
+    margin-bottom: 1rem;
 }
+
 .attribution a { 
     color: hsl(228, 45%, 44%); 
     text-decoration: none;
 }
 
-/* the following media query is not yet finalized, the attribution div must not be a child of grid container */
-
-@media only screen and (min-width: 90em) {
-    .testimonial-grid {
-        display: grid;
-        justify-content: center;
-        align-content: center;
-    }
-    
+@media only screen and (min-width: 64em) {
     .grid-container {
         max-width: 69.375rem;
+        margin: 0 1.5rem;
         grid-template-rows: repeat(2, 1fr);
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas:
@@ -158,5 +156,28 @@ body {
 
     .kira {
         grid-area: kira;
+    }
+
+    .jeanette .main-message {
+        font-size: 1.279rem;
+    }
+
+    .daniel .quoted-message {
+        font-size: unset;
+    }
+
+    .patrick .quoted-message {
+        font-size: 0.83rem;
+    }
+
+    .attribution {
+        margin-top: 1rem; 
+        margin-bottom: unset;
+    }
+}
+
+@media only screen and (min-width: 73.125em) {
+    .grid-container {
+        margin: unset;
     }
 }
