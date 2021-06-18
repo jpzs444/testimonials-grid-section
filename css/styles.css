@@ -118,6 +118,7 @@ body {
     line-height: 1.2;
     padding: unset;
     color: var(--very-dark-blackish-blue);
+    opacity: 75%;
     box-shadow: unset;
     margin-bottom: 1rem;
 }
